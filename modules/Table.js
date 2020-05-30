@@ -28,7 +28,16 @@ class Table extends Component {
                <td>{name}</td>
                <td>{age}</td>
                <td>{email}</td>
+               <td>
+                  <select name="cars" id="cars">
+  <option value="volvo">Volvo</option>
+  <option value="saab">Saab</option>
+  <option value="mercedes">Mercedes</option>
+  <option value="audi">Audi</option>
+</select>
+</td>
                <td><button onClick={(e) => this.viewRow(id, e)}>View Row Id</button></td>
+               
             </tr>
          )
       })
